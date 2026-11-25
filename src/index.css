@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-cream-100 text-ink font-sans;
+  background-image: radial-gradient(at 0% 0%, #ebe5f8 0, transparent 45%), radial-gradient(at 100% 0%, #e0eefa 0, transparent 40%);
+  background-attachment: fixed;
+}
+@layer components {
+  .card { @apply bg-white/90 rounded-3xl shadow-soft p-5 border border-white; }
+  .btn { @apply inline-flex items-center justify-center gap-1 rounded-2xl px-4 py-2 text-sm font-medium transition active:scale-95; }
+  .btn-primary { @apply btn bg-lav-400 text-white hover:bg-lav-500; }
+  .btn-ghost { @apply btn bg-lav-50 text-ink-soft hover:bg-lav-100; }
+  .btn-danger { @apply btn bg-rose-50 text-rose-500 hover:bg-rose-100; }
+  .input { @apply w-full rounded-2xl border border-lav-100 bg-cream-50 px-3 py-2 text-sm outline-none focus:border-lav-300 focus:ring-2 focus:ring-lav-100; }
+  .label { @apply block text-xs font-medium text-ink-soft mb-1; }
+  .h-page { @apply text-2xl font-bold; }
+}
