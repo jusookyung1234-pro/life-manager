@@ -32,7 +32,7 @@ export const emptyData = () => ({
 export function sampleData() {
   const t = today()
   const d = emptyData()
-  d.profile = { name: '유진', workoutGoal: 3 }
+  d.profile = { name: '수경', workoutGoal: 3 }
   d.dailyGoal[t] = '중요한 일 하나를 끝내고 저녁엔 푹 쉬기'
 
   const ev = (date, title, start, end, priority) => d.events.push({ id: uid(), date, title, start, end, priority })

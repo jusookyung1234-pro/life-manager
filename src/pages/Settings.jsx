@@ -26,7 +26,7 @@ export default function Settings() {
       {msg && <div className="mb-4 rounded-2xl bg-sky2-100 px-4 py-2 text-sm" role="status">{msg}</div>}
       <div className="grid gap-5 md:grid-cols-2">
         <Card title="프로필">
-          <Field label="이름(인사말에 사용돼요)"><input className="input" value={name} onChange={(e) => setName(e.target.value)} placeholder="예: 유진" /></Field>
+          <Field label="이름(인사말에 사용돼요)"><input className="input" value={name} onChange={(e) => setName(e.target.value)} placeholder="예: 수경" /></Field>
           <button className="btn-primary" onClick={() => { patch((d) => ({ profile: { ...d.profile, name: name.trim() } })); note('저장했어요 ✓') }}>저장</button>
         </Card>
         <Card title="AI 매니저">
